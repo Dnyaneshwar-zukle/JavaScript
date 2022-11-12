@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.hide{display:none;}
+.show{display:block;}
+#demo{
+ height:400px;
+ background-color:orange;
+ border-radius:7px;
+ text-align:center;
+ width:400px;
+ margin:20px auto;
+ padding:20px 0px;
+ position:absolute;
+}
+
+.demo{
+ height:400px;
+ background-color:pink;
+ border-radius:7px;
+ text-align:center;
+ width:400px;
+ margin:20px auto;
+ padding:20px 0px;
+ position:absolute;
+}
+.section1{position:;}
+</style>
+</head>
+<body>
+<div class="section1">
+<button onclick="myFunction()">Click me</button>
+
+<p class="demo">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+<div id="demo" class="hide">
+  <button onclick=" myFunctionForHode()">Remove Form</button>
+  <br><br>
+  <input type="text" placeholder="First name" /><br><br>
+  <input type="text" placeholder="Last name" /><br><br>
+  <button>submit</button>
+</div>
+</div>
+
+<div>
+<h1>>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h1>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</div>
+
+<script>
+function myFunction() {
+  x = document.getElementById("demo");
+  x.classList.add('show');
+}
+
+function myFunctionForHode() {
+  x = document.getElementById("demo");
+  x.classList.remove('show');
+}
+</script>
+
+</body>
+</html>

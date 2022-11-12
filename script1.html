@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+p {
+   font-size: 2rem;
+}
+
+button {
+    padding: 7px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.blue {
+    background-color: #3498db;
+}
+
+button.green {
+    background-color: #2ecc71;
+}
+
+button.orange {
+   background-color: orangered;
+}
+#popup{
+height: 400px;
+background-color: pink;
+padding: 20px 30px;
+position: absolute;
+display: none;
+}
+#popup{}
+
+.hide{display:none}
+    </style>
+</head>
+<body>
+    <button onclick="functionToExecute()">Click</button>
+    <div>
+        <p class="name">freeCodeCamp</p>
+        <button onclick="changeColor()" class="blue">Blue</button>
+        <button onclick="changeColor('green')" class="green">Green</button>
+        <button onclick="changeColor('orangered')" class="orange">Orange</button>
+  </div>
+    <div>
+        <p class="name">freeCodeCamp</p>
+        <button onclick="changeColor()">Change to Blue</button>
+      </div>
+      <script>
+            function changeColor() {
+            console.log('hello world');
+            }
+      </script>
+<!-- html part -->
+    <button onclick="open()" class="button">Open</button>
+    <button  class="button" onclick="Close()">close</button>
+
+<div id="popup">
+   <form action="" class="form">
+    <br><br>
+    <input type="text" placeholder="first name"><br><br>
+    <input type="text" placeholder="Last name">
+   </form> 
+</div>
+
+<script>
+    function Close(){
+        console.log('hello wolrd');
+        <br>;
+    }
+</script>
+
+<!-- js part -->
+
+</body>
+</html>
